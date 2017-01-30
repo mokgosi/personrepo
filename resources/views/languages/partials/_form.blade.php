@@ -2,7 +2,7 @@
     {!! Form::label('name', 'Name:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('name', $value=null, 
-            ['placeholder' => 'Type language name', 'class' => 'form-control']) !!}
+            ['placeholder' => 'Type language name', 'class' => 'form-control','required'=>'']) !!}
     </div>
 </div>
 <div class="form-group">

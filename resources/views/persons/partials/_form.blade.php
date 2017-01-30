@@ -2,14 +2,14 @@
     {!! Form::label('first_name', 'First Name:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('first_name', $value=null,
-            ['placeholder' => 'Type first name', 'class' => 'form-control']) !!}
+            ['placeholder' => 'Type first name', 'class' => 'form-control','required'=>'']) !!}
     </div>
 </div>
 <div class="form-group">
     {!! Form::label('surname', 'Last Name:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('surname', $value=null, 
-            ['placeholder' => 'Type surname', 'class' => 'form-control col-sm-4']) !!}
+            ['placeholder' => 'Type surname', 'class' => 'form-control col-sm-4','required'=>'']) !!}
     </div>
 </div>
 <div class="form-group">
