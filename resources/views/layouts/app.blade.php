@@ -13,6 +13,8 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
+    @yield('stylesheets')
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -109,5 +111,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    @yield('scripts')
 </body>
 </html>

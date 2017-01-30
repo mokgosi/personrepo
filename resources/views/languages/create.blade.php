@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('stylesheets')
-    {!! Html::styles(css/parsley.css) !!}
+    {!! Html::style('css/parsley.css') !!}
 @endsection
 
 @section('content')
@@ -10,7 +10,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Add New</div>
                 <div class="panel-body">
-                    {!! Form::model(new App\Language, ['route' => ['language.store'], 'class'=>'form-horizontal']) !!}
+                    {!! Form::model(new App\Language, ['route' => ['language.store'], 
+                            'data-parsley-validate'=>'', 'class'=>'form-horizontal']) !!}
                         @include('languages/partials/_form', ['submit_text' => 'Add'])
                     {!! Form::close() !!}
                 </div>
@@ -20,5 +21,5 @@
 @endsection
 
 @section('scripts')
-    {!! Html::styles(js/parsley.min.js) !!}
+    {!! Html::script('js/parsley.min.js') !!}
 @endsection
