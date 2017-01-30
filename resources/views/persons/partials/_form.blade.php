@@ -2,21 +2,21 @@
     {!! Form::label('first_name', 'First Name:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('first_name', $value=null,
-            ['placeholder' => 'Type first name', 'class' => 'form-control','required'=>'']) !!}
+            ['placeholder' => 'Type first name', 'class' => 'form-control  col-sm-4','required'=>'', 'minlength'=>"3", 'maxlength'=>"255"]) !!}
     </div>
 </div>
 <div class="form-group">
     {!! Form::label('surname', 'Last Name:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('surname', $value=null, 
-            ['placeholder' => 'Type surname', 'class' => 'form-control col-sm-4','required'=>'']) !!}
+            ['placeholder' => 'Type surname', 'class' => 'form-control col-sm-4','required'=>'', 'minlength'=>"3", 'maxlength'=>"255"]) !!}
     </div>
 </div>
 <div class="form-group">
     {!! Form::label('email', 'Email:', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
         {!! Form::text('email', $value=null, 
-            ['placeholder' => 'email@mail.com','class' => 'form-control col-sm-4']) !!}
+            ['placeholder' => 'email@mail.com','class' => 'form-control col-sm-4', 'data-parsley-type'=>"email"]) !!}
     </div>
 </div>
 <div class="form-group">
