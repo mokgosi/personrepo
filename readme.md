@@ -10,8 +10,10 @@ Installation
 
 3. From projet folder, run the following commands to complete installation
 
-   -- php artisan migrate 
+   -- php artisan migrate
+
    -- php artisan db:seed
+   
    -- php artisan serve 
 
 4. Browse to http://localhost:8000/   
