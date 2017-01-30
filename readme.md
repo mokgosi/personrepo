@@ -13,7 +13,7 @@ Installation
    -- php artisan migrate
 
    -- php artisan db:seed
-   
+
    -- php artisan serve 
 
 4. Browse to http://localhost:8000/   
@@ -22,4 +22,5 @@ Installation
 Login details:
 
 username/email: admin@mail.com
+
 password:       secret
